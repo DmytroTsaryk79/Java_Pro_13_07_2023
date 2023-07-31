@@ -1,2 +1,1 @@
 # I expect the deepening of my own knowledge in the indicated direction from the courses for learning the Java programming language - JavaPro from the Hillel company. I want to acquire the necessary knowledge to start a career as a software developer
-45
