@@ -1,23 +1,17 @@
 package lessons.lesson5;
 
-public class Human implements Participant {
-    String name;
-    int maxRunDistance;
-    int maxJumpHeight;
-
-    public Human(String name, int maxRunDistance, int maxJumpHeight) {
-        this.name = name;
-        this.maxRunDistance = maxRunDistance;
-        this.maxJumpHeight = maxJumpHeight;
+public class Human extends Participant {
+    public Human(String name) {
+        super(name, 5000, 2);
     }
 
     @Override
     public void run() {
-        System.out.println(name + " біжить");
+        System.out.println("Людина " + name + " пробігає бігову доріжку.");
     }
 
     @Override
     public void jump() {
-        System.out.println(name + " стрибає");
+        System.out.println("Людина " + name + " стрибає через перешкоду.");
     }
 }

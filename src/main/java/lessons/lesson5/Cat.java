@@ -1,23 +1,17 @@
 package lessons.lesson5;
 
-public class Cat implements Participant {
-String name;
-int maxRunDistance;
-int maxJumpHeight;
+public class Cat extends Participant {
+    public Cat(String name) {
+        super(name, 2000, 3);
+    }
 
-public Cat(String name, int maxRunDistance, int maxJumpHeight) {
-        this.name = name;
-        this.maxRunDistance = maxRunDistance;
-        this.maxJumpHeight = maxJumpHeight;
-        }
+    @Override
+    public void run() {
+        System.out.println("Кіт " + name + " пробігає бігову доріжку.");
+    }
 
-@Override
-public void run() {
-        System.out.println(name + " біжить");
-        }
-
-@Override
-public void jump() {
-        System.out.println(name + " стрибає");
-        }
+    @Override
+    public void jump() {
+        System.out.println("Кіт " + name + " стрибає через перешкоду.");
+    }
 }

@@ -1,24 +1,17 @@
 package lessons.lesson5;
 
-public class Robot implements Participant {
-    String name;
-    int maxRunDistance;
-    int maxJumpHeight;
-
-    public Robot(String name, int maxRunDistance, int maxJumpHeight) {
-        this.name = name;
-        this.maxRunDistance = maxRunDistance;
-        this.maxJumpHeight = maxJumpHeight;
+public class Robot extends Participant {
+    public Robot(String name) {
+        super(name, 10000, 1);
     }
 
     @Override
     public void run() {
-        System.out.println(name + " біжить");
+        System.out.println("Робот " + name + " пробігає бігову доріжку.");
     }
 
     @Override
     public void jump() {
-        System.out.println(name + " стрибає");
+        System.out.println("Робот " + name + " стрибає через перешкоду.");
     }
 }
-
