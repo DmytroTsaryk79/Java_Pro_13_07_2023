@@ -2,9 +2,9 @@ package lessons.lesson8;
 
 public class Main {
     public static void main(String[] args) {
-        String inputString = "Hello Hillel school!";
+        String inputString = "Hillel";
         String reversedString = stringReverse(inputString);
-        System.out.println("Рядок '" + inputString + "' у реверсованому вигляді: " + reversedString);
+        System.out.println(inputString.equalsIgnoreCase(reversedString));
     }
 
     public static String stringReverse(String input) {
