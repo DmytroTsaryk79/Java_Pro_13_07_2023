@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         String inputString = "Hillel";
         String reversedString = stringReverse(inputString);
+        System.out.println("Рядок '" + inputString + "' у реверсованому вигляді: " + reversedString);
         System.out.println(inputString.equalsIgnoreCase(reversedString));
     }
 

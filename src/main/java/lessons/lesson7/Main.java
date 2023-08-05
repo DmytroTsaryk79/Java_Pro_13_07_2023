@@ -3,7 +3,7 @@ package lessons.lesson7;
 public class Main {
     public static void main(String[] args) {
         String source = "Hello Hillel school!";
-        String target = "pro";
+        String target = "lo";
 
         int position = findWordPosition(source, target);
         if (position != -1) {
